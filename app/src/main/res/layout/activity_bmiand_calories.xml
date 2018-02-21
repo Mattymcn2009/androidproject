@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+tools:context=".BMIAndCalories"
+android:background="@drawable/images">
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="Please enter your age, weight and height to see if you have a normal body weight"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#ffffff"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/age"
+        android:layout_alignBottom="@+id/age"
+        android:layout_alignEnd="@+id/textView6"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginEnd="29dp"
+        android:gravity="center_horizontal"
+        android:text="@string/age"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/weight"
+        android:layout_below="@+id/welcome"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:background="#ffffff"
+        android:ems="6"
+        android:inputType="number|numberDecimal"
+        android:textSize="20sp" />
+
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView8"
+        android:layout_below="@+id/textView5"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="29dp"
+        android:gravity="center_horizontal"
+        android:text="@string/weight"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/weight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView6"
+        android:layout_alignBottom="@+id/textView6"
+        android:layout_alignStart="@+id/height"
+        android:layout_gravity="center_horizontal"
+        android:background="#ffffff"
+        android:ems="6"
+        android:inputType="number|numberDecimal"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView6"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:text="@string/height"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/height"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView8"
+        android:layout_alignBottom="@+id/textView8"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="29dp"
+        android:layout_toEndOf="@+id/textView6"
+        android:background="#ffffff"
+        android:ems="6"
+        android:inputType="number|numberDecimal"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/calc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView8"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="22dp"
+        android:layout_toEndOf="@+id/textView8"
+        android:onClick="calculateBMI"
+        android:text="@string/calculateBMI" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/calc"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#ffffff"
+        android:text="Your BMI Is"
+        android:textSize="20sp" />
+
+
+
+
+
+
+
+</RelativeLayout>

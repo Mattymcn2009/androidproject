@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/images">
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="Male"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#ffffff"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView8"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:text="@string/age"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView5"
+        android:layout_alignBottom="@+id/textView5"
+        android:layout_alignStart="@+id/editText2"
+        android:layout_gravity="center_horizontal"
+        android:background="#ffffff"
+        android:ems="6"
+        android:inputType="number|numberDecimal"
+        android:textSize="20sp" />
+
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView8"
+        android:layout_below="@+id/welcome"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="52dp"
+        android:gravity="center_horizontal"
+        android:text="@string/weight"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView8"
+        android:layout_alignStart="@+id/editText2"
+        android:layout_gravity="center_horizontal"
+        android:background="#ffffff"
+        android:ems="6"
+        android:inputType="number|numberDecimal"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView6"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="62dp"
+        android:layout_toStartOf="@+id/welcome"
+        android:gravity="center_horizontal"
+        android:text="@string/height"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView8"
+        android:layout_alignBottom="@+id/textView8"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="22dp"
+        android:layout_toEndOf="@+id/textView8"
+        android:background="#ffffff"
+        android:ems="6"
+        android:inputType="number|numberDecimal"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/calc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText3"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="39dp"
+        android:onClick="calculateBMI"
+        android:text="@string/calculateCalories" />
+
+    <TextView
+        android:id="@+id/editText4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/calc"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="14dp"
+        android:gravity="center_horizontal"
+        android:text="Your Calorie Level Is"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+
+
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteX="8dp"
+    tools:layout_editor_absoluteY="8dp"
+    tools:context=".FitnessExamples"
+    android:background="@drawable/images"
+    >
+
+
+    <Button
+        android:id="@+id/buttEasy"
+        android:layout_width="170dp"
+        android:layout_height="95dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/buttMedium"
+        android:layout_marginTop="50dp"
+        android:background="#3dc9cc"
+        android:onClick="clickEasy"
+        android:text="Easy"
+        android:textColor="#ffffff"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/buttMedium"
+        android:layout_width="170dp"
+        android:layout_height="95dp"
+        android:layout_alignStart="@+id/buttHard"
+        android:layout_below="@+id/buttEasy"
+        android:layout_marginTop="33dp"
+        android:allowUndo="false"
+        android:background="#3dc9cc"
+        android:onClick="clickMedium"
+        android:text="Medium"
+        android:textColor="#ffffff"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/buttHard"
+        android:layout_width="170dp"
+        android:layout_height="95dp"
+        android:layout_below="@+id/buttMedium"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="37dp"
+        android:background="#3dc9cc"
+        android:onClick="clickHard"
+        android:text="Hard"
+        android:textColor="#ffffff"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>
